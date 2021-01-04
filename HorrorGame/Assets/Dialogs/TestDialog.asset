@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbf1ce125a2c1bf43a07e5ffad39f24e, type: 3}
+  m_Name: TestDialog
+  m_EditorClassIdentifier: 
+  name:
+  - Test Name 1
+  - Test Name 2
+  - Test Name 3
+  dialogDescription: Test dialog. Description for the developer to put necessary
+    information to indentify where tf the dialog should be.
+  texts:
+  - Test 1
+  - "Test 2\t"
+  - Test 3
+  images:
+  - {fileID: 21300000, guid: 5f5b0bce1bc123b4695a9c497260fc7a, type: 3}
+  - {fileID: 21300000, guid: 94ece670ca4304d4db4bb93182f2cfa6, type: 3}
+  - {fileID: 21300000, guid: b39804dc1515a44489c5af8091c2b6f6, type: 3}

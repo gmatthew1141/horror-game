@@ -9,6 +9,10 @@ TagManager:
   - Door
   - ObtainableItem
   - UnobtainableItem
+  - DialogNameText
+  - DialogMessageText
+  - DialogUI
+  - DialogImage
   layers:
   - Default
   - TransparentFX

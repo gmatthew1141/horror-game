@@ -7,17 +7,13 @@ public class PlayerController : MonoBehaviour {
 
     private GameSettings gameSettings;
     private Vector2 dir;
+    private bool canMove = true;
 
     // Interaction variables
     public Transform interactPointN;
 
     private void Awake() {
         gameSettings = FindObjectOfType<GameSettings>();
-    }
-
-    // Start is called before the first frame update
-    void Start() {
-        
     }
 
     // Update is called once per frame
@@ -48,7 +44,9 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void FixedUpdate() {
-        transform.Translate(dir * gameSettings.moveSpeed * Time.deltaTime);
+        if (canMove) {
+            transform.Translate(dir * gameSettings.moveSpeed * Time.deltaTime);
+        }
 
     }
 
@@ -76,10 +74,15 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
+    public void AllowMovement(bool allow) {
+        canMove = allow;
+    }
+
     private void OnDrawGizmos() {
         //float rad = gameSettings.interactionRadius;
             
         //Gizmos.DrawWireSphere(transform.position, rad);
     }
+
 
 }
